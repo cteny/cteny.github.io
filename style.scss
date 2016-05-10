@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: url(http://www.startfilm.ru/images/base/film/f_554782/big_startfilmru1286621.jpg);
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -30,7 +30,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
@@ -45,7 +45,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: $helveticaNeue;
   font-size: 30px;
+  color: red;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
   a {
     color: inherit;
   }
@@ -53,6 +64,17 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-family: $helveticaNeue;
+  color: black;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
 }
 
 h3 {
@@ -66,10 +88,11 @@ h4 {
 
 p {
   margin: 15px 0;
+  background: url(http://hd.wallpaperswide.com/thumbs/light_gray_texture-t2.jpg);
 }
 
 a {
-  color: $blue;
+  color: $red;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
