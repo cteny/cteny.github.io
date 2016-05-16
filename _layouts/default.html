@@ -13,6 +13,39 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    
+      body {
+background-image: url("http://www.startfilm.ru/images/base/film/f_554782/big_startfilmru1286621.jpg");
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
+}
+    
+    header {
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+  background: url(http://www.wallpapermade.com/images/wallpapers/originals/chappie-movie-logo-wallpaper-4229.jpg);
+  background-size: cover;
+
+  @include mobile {
+    text-align: center;
+  } 
+
+p {
+  margin: 15px 0;
+  background: url(http://hd.wallpaperswide.com/thumbs/light_gray_texture-t2.jpg);
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $red;
+  }
+    
+    
+    
+    
   </head>
 
   <body>
@@ -49,37 +82,6 @@
     </div>
 
     {% include analytics.html %}
-    
-    
-    body {
-background-image: url("http://www.startfilm.ru/images/base/film/f_554782/big_startfilmru1286621.jpg");
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-    
-    header {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-  background: url(http://www.wallpapermade.com/images/wallpapers/originals/chappie-movie-logo-wallpaper-4229.jpg);
-  background-size: cover;
-
-  @include mobile {
-    text-align: center;
-  } 
-
-p {
-  margin: 15px 0;
-  background: url(http://hd.wallpaperswide.com/thumbs/light_gray_texture-t2.jpg);
-}
-
-a {
-  color: $red;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $red;
-  }
-    
     
   </body>
 </html>
